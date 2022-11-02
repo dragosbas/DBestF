@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
-@Controller
+//@Controller
 
-@CrossOrigin
+//@CrossOrigin
 public class ProductController {
     ProductService productService;
-    public ProductController(ProductService productService) {
-        this.productService = productService;
-    }
+//    public ProductController(ProductService productService) {
+//        this.productService = productService;
+//    }
 
-    @GetMapping(value="/products/getAll/")
-    public ResponseEntity<List<Product>> getAllProducts(){return ResponseEntity.ok(productService.findAll());}
+//    @GetMapping(value="/products/getAll/")
+//    public ResponseEntity<List<Product>> getAllProducts(){return ResponseEntity.ok(productService.findAll());}
 }

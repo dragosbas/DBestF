@@ -11,9 +11,9 @@ public class DBestFApplication {
 
     public static void main(String[] args) {
         ApplicationContext applicationContext = SpringApplication.run(DBestFApplication.class, args);
-        ProductRepository produsRepository = applicationContext.getBean(ProductRepository.class);
-        produsRepository.save(new Product(1l));
-        System.out.printf("Bla");
+//        ProductRepository produsRepository = applicationContext.getBean(ProductRepository.class);
+//        produsRepository.save(new Product(1l));
+        System.out.printf("Bla BLA");
     }
 
 }

@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+//@Service
 public class ProductService {
-    @Autowired
+//    @Autowired
     ProductRepository productRepository;
 
     public List<Product> findAll() {return productRepository.findAll();}
