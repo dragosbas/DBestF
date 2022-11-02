@@ -1,2 +1,13 @@
-package com.example.dbestf.Repositories;public class ProductRepository {
+package com.example.dbestf.Repositories;
+
+import com.example.dbestf.Entities.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface ProductRepository extends JpaRepository<Product,Long> {
+
+    List<Product> findAll();
 }
